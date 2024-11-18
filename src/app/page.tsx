@@ -125,7 +125,7 @@ export default function Home() {
               <p className="font-bold text-xl">Ayam Tergoreng</p>
               <div className="flex items-center gap-1">
                 <Tag className="w-4 h-4 text-primary" />
-                <p className="text-sm font-semibold">Rp 25.000.000</p>
+                <p className="text-sm font-semibold">Rp 25.000</p>
               </div>
             </div>
             <Separator />
