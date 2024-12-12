@@ -23,6 +23,7 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -99,7 +100,9 @@ const Login = () => {
         </CardContent>
         <Separator />
         <CardFooter className="p-6 flex justify-end">
-          <Button type="submit">Login</Button>
+          <Button asChild type="submit">
+            <Link href="/">Login</Link>
+          </Button>
         </CardFooter>
       </Card>
     </div>
